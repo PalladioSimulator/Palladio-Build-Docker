@@ -11,7 +11,7 @@ The image can be found at [docker hub](https://hub.docker.com/repository/docker/
 
 ## Dockerfile
 ``` bash
-FROM palladiosimulator/eclipsepalladio
+FROM palladiosimulator/eclipse-palladio
 RUN apt-get clean && \
     apt-get update --fix-missing && \
     apt-get install -y --fix-missing xvfb libgtk-3-0
@@ -51,7 +51,7 @@ export DISPLAY=:99
 
 ``` sh
 SET SRC_PATH=%cd%
-SET IMAGE_NAME=palladiosimulator/palladioexperimentautomation:latest
+SET IMAGE_NAME=palladiosimulator/palladio-experimentautomation:latest
 REM SET IMAGE_NAME=palladioexperimentautomation:latest
 SET CONTAINER_PATH=/usr
 SET EXPERIMENT_FILE_NAME=Capacity.experiments

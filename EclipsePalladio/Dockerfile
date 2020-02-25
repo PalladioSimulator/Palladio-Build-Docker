@@ -1,4 +1,4 @@
-FROM palladiosimulator/eclipsemodelingtools
+FROM palladiosimulator/eclipse-modeling-tools
 # Install everything from features.txt
 COPY InstallFeature.sh /usr/InstallFeature.sh
 COPY InstallLocalUpdates.sh /usr/InstallLocalUpdates.sh

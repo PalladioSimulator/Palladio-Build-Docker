@@ -26,7 +26,7 @@ The image can be found at [docker hub](https://hub.docker.com/repository/docker/
 ## Dockerfile
 - probably you have to add basic update sites that cannot be located during the installation process
 ``` bash
-FROM palladiosimulator/eclipsemodelingtools
+FROM palladiosimulator/eclipse-modeling-tools
 # Install everything from features.txt
 COPY InstallFeature.sh /usr/InstallFeature.sh
 COPY InstallLocalUpdates.sh /usr/InstallLocalUpdates.sh

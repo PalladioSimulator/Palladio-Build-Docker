@@ -1,4 +1,4 @@
-FROM palladiosimulator/eclipsepalladio
+FROM palladiosimulator/eclipse-palladio
 RUN apt-get clean && \
     apt-get update --fix-missing && \ 
     apt-get install -y --fix-missing xvfb libgtk-3-0
