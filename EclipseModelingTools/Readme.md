@@ -7,7 +7,7 @@ Project contains a dockerfile installing the _openjdk-11-jre-headless_ and _wget
 Simple docker image with a working headless eclipse installation. For an example how to use the application have a look at __EclipseExampleApplication__ or __PalladioExperimentAutomation__ as a folder in [this](https://github.com/TomWerm/Palladio-Docker) repository.
 
 ## Docker hub
-The image can be found at [docker hub](https://hub.docker.com/repository/docker/thomasweber/eclipsemodelingtools). Auto-Build is currently disabled.
+The image can be found at [docker hub](https://hub.docker.com/repository/docker/palladiosimulator/eclipsemodelingtools).
 
 ## Dockerfile
 ``` bash

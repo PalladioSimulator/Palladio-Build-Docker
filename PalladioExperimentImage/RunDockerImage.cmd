@@ -1,5 +1,5 @@
 SET SRC_PATH=%cd%
-SET IMAGE_NAME=thomasweber/palladioexperimentimage:latest
+SET IMAGE_NAME=palladiosimulator/palladioexperimentimage:latest
 SET CONTAINER_PATH=/usr
 SET EXPERIMENT_FILE_NAME=Capacity.experiments
 SET EXPERIMENT_GEN_FILE_NAME=Generated.experiments

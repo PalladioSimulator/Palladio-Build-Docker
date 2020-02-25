@@ -1,7 +1,7 @@
 # Eclipse with installed palladiosimulator
 
 ## Description
-Project extends my [eclipse modeling tools image](https://hub.docker.com/repository/docker/thomasweber/eclipsemodelingtools). Installs all packages named in features.txt from the given update sites. The format of the file is:
+Project extends my [eclipse modeling tools image](https://hub.docker.com/repository/docker/palladiosimulator/eclipsemodelingtools). Installs all packages named in features.txt from the given update sites. The format of the file is:
 ``` bash
 # comment lines
 org.feature1,org.feature2%updatesite1,updatesite2
@@ -21,12 +21,12 @@ org.palladiosimulator.experimentautomation.application.feature.feature.group,org
 Simple docker image with a working headless eclipse and palladio installation. For an example how to use the application have a look at __PalladioExperimentAutomation__ as a folder in [this](https://github.com/TomWerm/Palladio-Docker) repository.
 
 ## Docker hub
-The image can be found at [docker hub](https://hub.docker.com/repository/docker/thomasweber/eclipsepalladio). Auto-Build is currently disabled.
+The image can be found at [docker hub](https://hub.docker.com/repository/docker/palladiosimulator/eclipsepalladio).
 
 ## Dockerfile
 - probably you have to add basic update sites that cannot be located during the installation process
 ``` bash
-FROM thomasweber/eclipsemodelingtools
+FROM palladiosimulator/eclipsemodelingtools
 # Install everything from features.txt
 COPY InstallFeature.sh /usr/InstallFeature.sh
 COPY InstallLocalUpdates.sh /usr/InstallLocalUpdates.sh

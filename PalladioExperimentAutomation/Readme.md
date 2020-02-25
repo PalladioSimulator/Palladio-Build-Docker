@@ -1,17 +1,17 @@
 # Eclipse with installed palladiosimulator and files for ExperimentAutomation runs
 
 ## Description
-Project extends my [eclipse palladio installation image](https://hub.docker.com/repository/docker/thomasweber/eclipsepalladio) with files to run ExperimentAutomation experiments. Also installs __xfvb__ and __libgtk-3-0__ because they are used during the experiment runs. Adds the scripts shown in the next sections to the image. The cmd script executes the experiment run.
+Project extends my [eclipse palladio installation image](https://hub.docker.com/repository/docker/palladiosimulator/eclipsepalladio) with files to run ExperimentAutomation experiments. Also installs __xfvb__ and __libgtk-3-0__ because they are used during the experiment runs. Adds the scripts shown in the next sections to the image. The cmd script executes the experiment run.
 
 ## Usage
 Simple docker image with a working headless eclipse installation. For an example how to use the application have a look at __EclipseExampleApplication__ as a folder in [this](https://github.com/TomWerm/Palladio-Docker) repository.
 
 ## Docker hub
-The image can be found at [docker hub](https://hub.docker.com/repository/docker/thomasweber/palladioexperimentautomation). Auto-Build is currently disabled.
+The image can be found at [docker hub](https://hub.docker.com/repository/docker/palladiosimulator/palladioexperimentautomation).
 
 ## Dockerfile
 ``` bash
-FROM thomasweber/eclipsepalladio
+FROM palladiosimulator/eclipsepalladio
 RUN apt-get clean && \
     apt-get update --fix-missing && \
     apt-get install -y --fix-missing xvfb libgtk-3-0
@@ -51,7 +51,7 @@ export DISPLAY=:99
 
 ``` sh
 SET SRC_PATH=%cd%
-SET IMAGE_NAME=thomasweber/palladioexperimentautomation:latest
+SET IMAGE_NAME=palladiosimulator/palladioexperimentautomation:latest
 REM SET IMAGE_NAME=palladioexperimentautomation:latest
 SET CONTAINER_PATH=/usr
 SET EXPERIMENT_FILE_NAME=Capacity.experiments

@@ -1,7 +1,7 @@
 # Example application for eclipse
 
 ## Description
-Project extends my [eclipse docker image](https://hub.docker.com/repository/docker/thomasweber/eclipse) with a custom application that is installed into eclipse via the dropins folder of eclipse.
+Project extends my [eclipse docker image](https://hub.docker.com/repository/docker/palladiosimulator/eclipse) with a custom application that is installed into eclipse via the dropins folder of eclipse.
 
 ## Usage
 Example how to run headless eclipse applications in a docker container. Import your own application by changing the copied file in the dockerfile the name of the application in the __RunApplication.sh__ script. Build the dockerfile to test if your application is working. The plug-in creation process is described in the next paragraph.
