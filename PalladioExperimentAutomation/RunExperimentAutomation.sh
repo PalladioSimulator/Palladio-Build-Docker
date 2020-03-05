@@ -7,4 +7,4 @@ export DISPLAY=:99
      -clean \
      -application org.palladiosimulator.experimentautomation.application \
      -consoleLog "$2" \
-     -data "/usr/workspace"
+     -data "/result/workspace"
